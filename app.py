@@ -3,7 +3,7 @@ import streamlit as st
 from openai import OpenAI, api_key
 
 # Load API key from Streamlit secrets
-openai.api_key = st.getenev["OPENAI_API_KEY"]
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 client = OpenAI(api_key=api_key)
 
 st.title("OMEN")
