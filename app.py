@@ -7,6 +7,7 @@ openai.api_key = st.secrets["OPENAI_API_KEY"]
 client = OpenAI(api_key=api_key)
 
 st.title("OMEN")
+st.subheader("by Sourav Lenka")
 
 # Session state for chat history
 if "messages" not in st.session_state:
